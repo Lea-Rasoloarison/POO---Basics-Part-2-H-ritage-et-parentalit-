@@ -6,13 +6,13 @@ require_once 'Vehicule.php';
 
 class Car extends Vehicule
 {
-    private string $energy;
 
     private int $energyLevel;
 
     public function __construct(string $color, int $nbSeats, string $energy)
     {
-        parent::__construct($color, $nbSeats);
+        $this->color = $color;
+        $this->nbSeats = $nbSeats;
         $this->energy = $energy;
     }
 
