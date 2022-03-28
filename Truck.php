@@ -11,7 +11,8 @@ class Truck extends Vehicule
 
     public function __construct(string $color, int $nbSeats, string $energy, string $chargementLevel)
     {
-        parent::__construct($color, $nbSeats);
+        $this->color = $color;
+        $this->nbSeats = $nbSeats;
         $this->energy = $energy;
         $this->chargementLevel = $chargementLevel;
 
